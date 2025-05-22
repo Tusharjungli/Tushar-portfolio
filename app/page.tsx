@@ -1,9 +1,17 @@
 import TodoApp from "./components/TodoApp";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
       <div className="max-w-xl w-full px-4 py-10 rounded-2xl shadow-lg bg-white dark:bg-gray-800">
+        <Image
+          src="/profile.jpg"
+          alt="Tushar Panchal"
+          width={96}
+          height={96}
+          className="rounded-full mx-auto mb-4 shadow"
+        />
         <h1 className="text-4xl font-bold mb-2">Tushar Panchal</h1>
         <h2 className="text-xl mb-6">Web Developer • Writer • Organizer</h2>
         <p className="mb-6 text-lg">
@@ -80,6 +88,9 @@ export default function Home() {
           <h3 className="text-2xl font-semibold mb-2">Contact</h3>
           <p className="text-gray-600 dark:text-gray-300">
             Email: <a href="mailto:trpanchal.tr@gmail.com" className="underline">trpanchal.tr@gmail.com</a>
+          </p>
+          <p className="mt-4 text-green-400 font-semibold">
+            <span className="animate-pulse">●</span> Open to freelance work and collaborations!
           </p>
         </section>
       </div>
