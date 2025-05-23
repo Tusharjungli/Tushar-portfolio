@@ -26,10 +26,13 @@ export default function Home() {
           className="rounded-full mx-auto mb-4 shadow"
         />
         <h1 className="text-4xl font-bold mb-2">Tushar Panchal</h1>
-        <h2 className="text-xl mb-6 font-normal text-gray-700 dark:text-gray-300">Web Developer • Writer • Organizer</h2>
+        <h2 className="text-xl mb-6 font-normal text-gray-700 dark:text-gray-300">
+          Web Developer • Writer • Organizer
+        </h2>
         <p className="mb-6 text-lg text-gray-700 dark:text-gray-200">
-          Hi, I’m Tushar Panchal. I love building digital experiences, organizing ideas, and sharing what I learn.
-          This is my personal portfolio—explore my projects, writing, and more.
+          Gen Z builder focused on crafting extraordinary, user-first web experiences.
+          Always exploring simplicity, speed, and a bit of magic in everything I build.
+          Check out my projects, stories, and let’s connect!
         </p>
 
         {/* Projects Section */}
@@ -43,7 +46,6 @@ export default function Home() {
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
           <h3 className="text-2xl font-semibold mb-2">Projects</h3>
-          {/* Auto India-6 Project */}
           <motion.div
             className="bg-white dark:bg-gray-700 p-6 rounded-xl shadow mb-6 border border-gray-100 dark:border-none"
             whileHover={{ scale: 1.02 }}
@@ -54,7 +56,7 @@ export default function Home() {
               <span className="text-xs text-yellow-500 font-normal">(In Progress)</span>
             </h4>
             <p className="mb-2 text-gray-700 dark:text-gray-300">
-              An AI-powered e-commerce platform for automobile spare parts—built with Next.js, PostgreSQL, and Tailwind CSS. Focused on user experience, smart recommendations, and fast search.
+              AI-powered e-commerce for automobile spare parts. Built with Next.js, PostgreSQL, and Tailwind CSS. Focused on UX, smart recommendations, and blazing-fast search.
             </p>
             <motion.a
               href="https://github.com/Tusharjungli/Auto-India-6"
@@ -68,8 +70,6 @@ export default function Home() {
               View on GitHub
             </motion.a>
           </motion.div>
-
-          {/* Simple To-Do List Project */}
           <motion.div
             className="bg-white dark:bg-gray-700 p-6 rounded-xl shadow mb-6 border border-gray-100 dark:border-none"
             whileHover={{ scale: 1.01 }}
@@ -175,12 +175,88 @@ export default function Home() {
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 200, damping: 16 }}
           >
-            <h4 className="font-bold text-lg mb-1 text-gray-800 dark:text-gray-100">What I Learned Building Auto India-6</h4>
+            <h4 className="font-bold text-lg mb-1 text-gray-800 dark:text-gray-100">
+              What I Learned Building Auto India-6
+            </h4>
             <p className="text-gray-700 dark:text-gray-300 text-sm mb-2">
-              Building an AI-powered e-commerce platform from scratch was a journey of ups, downs, and growth. Here’s how I tackled challenges in UX, search, and smart recommendations…
+              <span className="font-semibold text-blue-600 dark:text-blue-400">Why the “6”?</span> Before this version, I failed five times—each version broke, taught me something, and made me want to quit. But I kept rebuilding, and <span className="font-semibold">Auto India-6</span> is the result of that resilience.<br /><br />
+              Building Auto India-6 took me on a month-long journey from idea to a functional prototype. The toughest parts were getting the database right and making dark/light mode feel seamless. Surprisingly, integrating Razorpay for payments was the easiest—and most fun—part of the process! Creating feedback and chatbot features helped me focus on what users truly need.<br /><br />
+              This project was inspired by my passion for cars and a real gap I saw in the Indian auto parts market: there’s no popular, trusted platform for buying spare parts like there is for other products. Auto India-6 is just the beginning—my vision is to keep building experiences that make life easier for car lovers across the country.
             </p>
-            <span className="inline-block px-3 py-1 bg-blue-700 text-white text-xs rounded">Coming Soon</span>
           </motion.div>
+        </motion.section>
+
+
+        {/* Certificates Section */}
+        <motion.section
+          id="certificates"
+          className="mt-12"
+          variants={fadeIn}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.18 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+        >
+          <h3 className="text-2xl font-semibold mb-2">Certificates</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {/* Certificate 1 */}
+            <a
+              href="/cert-google-it.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 bg-white dark:bg-gray-800 p-4 rounded-xl shadow border border-gray-100 dark:border-none hover:shadow-lg transition"
+            >
+              <Image
+                src="/cert-google-it.jpg"
+                alt="Google IT Automation with Python"
+                width={64}
+                height={64}
+                className="rounded-md object-cover"
+              />
+              <div>
+                <div className="font-bold">Google IT Automation with Python</div>
+                <div className="text-gray-600 dark:text-gray-400 text-sm">Coursera</div>
+              </div>
+            </a>
+            {/* Certificate 2 */}
+            <a
+              href="/cert-google-da.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 bg-white dark:bg-gray-800 p-4 rounded-xl shadow border border-gray-100 dark:border-none hover:shadow-lg transition"
+            >
+              <Image
+                src="/cert-google-da.jpg"
+                alt="Google Data Analytics"
+                width={64}
+                height={64}
+                className="rounded-md object-cover"
+              />
+              <div>
+                <div className="font-bold">Google Data Analytics</div>
+                <div className="text-gray-600 dark:text-gray-400 text-sm">Coursera</div>
+              </div>
+            </a>
+            {/* Certificate 3 */}
+            <a
+              href="/badge-google-da.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 bg-white dark:bg-gray-800 p-4 rounded-xl shadow border border-gray-100 dark:border-none hover:shadow-lg transition"
+            >
+              <Image
+                src="/badge-google-da.png"
+                alt="Google Data Analytics Badge"
+                width={64}
+                height={64}
+                className="rounded-md object-cover"
+              />
+              <div>
+                <div className="font-bold">Google Data Analytics (Badge)</div>
+                <div className="text-gray-600 dark:text-gray-400 text-sm">Credly</div>
+              </div>
+            </a>
+          </div>
         </motion.section>
 
         {/* Contact Section */}
