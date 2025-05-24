@@ -46,6 +46,48 @@ export default function Home() {
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
           <h3 className="text-2xl font-semibold mb-2">Projects</h3>
+
+          {/* FreePad Project */}
+          <motion.div
+            className="bg-white dark:bg-gray-700 p-6 rounded-xl shadow mb-6 border border-gray-100 dark:border-none"
+            whileHover={{ scale: 1.02 }}
+            transition={{ type: "spring", stiffness: 200, damping: 18 }}
+          >
+            <h4 className="text-xl font-bold mb-2">
+              FreePad <span className="text-xs text-green-500 font-normal">(2025)</span>
+            </h4>
+            <p className="mb-2 text-gray-700 dark:text-gray-300">
+              A distraction-free, minimalist writing and brainstorming platform built with Next.js, Tailwind, and Framer Motion.  
+              Born from my own search for calm, focus, and clarity while writing. Features an animated focus timer, beautiful dark/light modes, and a notebook drawer for creative tools.  
+              <span className="block mt-2 italic text-gray-500 dark:text-gray-400 text-sm">Built, launched, and open for everyone.</span>
+            </p>
+            <div className="flex gap-3 mt-2">
+              <motion.a
+                href="https://freepad.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded font-semibold"
+                whileHover={{ scale: 1.04 }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ type: "spring", stiffness: 300, damping: 18 }}
+              >
+                Live Demo
+              </motion.a>
+              <motion.a
+                href="https://github.com/Tusharjungli/freepad"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-4 py-2 bg-gray-900 hover:bg-gray-700 text-white rounded font-semibold"
+                whileHover={{ scale: 1.04 }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ type: "spring", stiffness: 300, damping: 18 }}
+              >
+                GitHub
+              </motion.a>
+            </div>
+          </motion.div>
+
+          {/* Auto India-6 Project */}
           <motion.div
             className="bg-white dark:bg-gray-700 p-6 rounded-xl shadow mb-6 border border-gray-100 dark:border-none"
             whileHover={{ scale: 1.02 }}
@@ -70,6 +112,8 @@ export default function Home() {
               View on GitHub
             </motion.a>
           </motion.div>
+
+          {/* Simple To-Do List Project */}
           <motion.div
             className="bg-white dark:bg-gray-700 p-6 rounded-xl shadow mb-6 border border-gray-100 dark:border-none"
             whileHover={{ scale: 1.01 }}
@@ -185,7 +229,6 @@ export default function Home() {
             </p>
           </motion.div>
         </motion.section>
-
 
         {/* Certificates Section */}
         <motion.section
