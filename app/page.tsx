@@ -299,6 +299,26 @@ export default function Home() {
                 <div className="text-gray-600 dark:text-gray-400 text-sm">Credly</div>
               </div>
             </a>
+            {/* Certificate 4: Nestlé E-Learning */}
+<a
+  href="/cert-nestle.jpg"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-4 bg-white dark:bg-gray-800 p-4 rounded-xl shadow border border-gray-100 dark:border-none hover:shadow-lg transition"
+>
+  <Image
+    src="/cert-nestle.jpg"
+    alt="Nestlé E-Learning Certificate"
+    width={64}
+    height={64}
+    className="rounded-md object-cover"
+  />
+  <div>
+    <div className="font-bold">Nestlé E-Learning</div>
+    <div className="text-gray-600 dark:text-gray-400 text-sm">Nestlé</div>
+  </div>
+</a>
+
           </div>
         </motion.section>
 
