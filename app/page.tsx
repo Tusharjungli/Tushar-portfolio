@@ -341,7 +341,7 @@ export default function Home() {
           </p>
           <motion.form
             className="flex flex-col gap-3 mt-4 bg-white dark:bg-gray-800 p-4 rounded-xl shadow border border-gray-100 dark:border-none"
-            action="https://formspree.io/f/mldbknaj"
+            action="https://formspree.io/f/xdkzgrlr"
             method="POST"
             whileHover={{ scale: 1.01 }}
             transition={{ type: "spring", stiffness: 200, damping: 16 }}
